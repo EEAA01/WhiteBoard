@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.fondo{
+    background-color: #d1cdcd;
+    height: 96.8vh;
+    padding-top: 20px ;
+    
+}
+
+canvas{
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: url(img/cirle.png), auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+.herramientas, .grosor{
+    display: inline-block;
+    padding: 5px;
+}
+
+.herramientas .btn-color{
+    cursor: pointer;
+    border: none;
+    width: 40px;
+    height: 30px;
+    background-color: #d1cdcd;
+}
+
+.herramientas .btn-eraser{
+    cursor: pointer;
+    border: none;
+    background-color: #d1cdcd;
+}
+
+.herramientas .btn-pencil{
+    cursor: pointer;
+    border: none;
+    background-color: #d1cdcd;
+}
+
+.herramientas{
+    border: 1px black solid;
+    border-radius: 5px;
+}
