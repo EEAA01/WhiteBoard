@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>WhiteBoard</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined">
-    </head>
-    <body>
 
-        <div class="fondo">
-            <canvas id="canvas" width="1000" height="500"></canvas>
-            
-            <div class="container">
-                <div class="herramientas">
-    
-                    <input type="color" class="btn-color">
-    
-                    <button type="button" class="btn-eraser">
-                        <span class="material-symbols-outlined eraser">
-                            gradient
-                        </span>
-                    </button>
-    
-                    <button type="button" class="btn-pencil">
-                        <span class="material-symbols-outlined pencil">
-                            draw
-                        </span>
-                    </button>
-    
-                    <div class="grosor">
-                        <label>Grosor:</label>
-                        <input type="radio" name="grosor" class="rad-1">
-                        <input type="radio" name="grosor" class="rad-2">
-                        <input type="radio" name="grosor" class="rad-3">
-                    </div>
-                    
-                </div>
-    
+<head>
+    <title>WhiteBoard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined">
+    <!--Iconos de Google Fonts-->
+    <script src="https://kit.fontawesome.com/a0c01df8ca.js" crossorigin="anonymous"></script>
+    <!--Sirve para usar los iconos de Font Awesome-->
+</head>
+
+<body>
+
+    <div class="fondo">
+        <canvas id="canvas" width="1000" height="500"></canvas>
+
+        <div class="barra">
+            <div class="tools">
+
+                <input type="color" class="btn color" id="btnColor" oninput="get_color(this.value)">
+
+                <button type="button" class="btn eraser" id="btnBorrar">
+                    <i class="fa-solid fa-eraser"></i>
+                </button>
+
+                <button type="button" class="btn pen" id="btnDibujar">
+                    <span class="material-symbols-outlined pencil">
+                        draw
+                    </span>
+                </button>
+                <p><strong>|</strong></p>
+                <button type="button" class="btn save" id="btnSave">
+                    <span class="material-symbols-outlined">
+                        save
+                    </span>
+                </button>
+
             </div>
 
-        </div>  
-    </body>
+        </div>
+
+    </div>
+
+    <script src="draw.js"></script>
+</body>
+
 </html>

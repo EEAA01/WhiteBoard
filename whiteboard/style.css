@@ -1,58 +1,76 @@
-body{
+/*
+  Configuracion default
+*/
+* {
     margin: 0;
     padding: 0;
-    
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
 }
 
-.fondo{
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.fondo {
     background-color: #d1cdcd;
     height: 96.8vh;
-    padding-top: 20px ;
-    
+    padding-top: 20px;
 }
 
-canvas{
+canvas {
     background-color: #fff;
     display: block;
     margin: 0 auto;
     margin-top: 20px;
     cursor: url(img/cirle.png), auto;
+    border-radius: 0.5rem;
 }
 
-.container{
+.barra {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5px;
     margin-top: 5px;
 }
 
-.herramientas, .grosor{
-    display: inline-block;
-    padding: 5px;
-}
-
-.herramientas .btn-color{
-    cursor: pointer;
-    border: none;
-    width: 40px;
-    height: 30px;
-    background-color: #d1cdcd;
-}
-
-.herramientas .btn-eraser{
-    cursor: pointer;
-    border: none;
-    background-color: #d1cdcd;
-}
-
-.herramientas .btn-pencil{
-    cursor: pointer;
-    border: none;
-    background-color: #d1cdcd;
-}
-
-.herramientas{
+.tools {
+    display: flex;
     border: 1px black solid;
     border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+}
+
+/*Cambio del estilo de icono de borrador*/
+.fa-eraser {
+    font-size: 20px;
+}
+
+.tools .btn {
+    cursor: pointer;
+    border: none;
+    background-color: #d1cdcd;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.tools .color {
+    width: 40px;
+    height: 30px;
+}
+
+.tools .pen .tools .save{
+    transform: translateY(3px);
+}
+
+.tools .btn:active  {
+    transform: translateY(-4px);
+}
+
+p{
+    font-size: 2rem;
+    transform: translateY(-2px);
 }
